@@ -11,6 +11,7 @@ The system is split into two primary components: the **Satellites** and the **Br
 * **Firmware:** Dual-core FreeRTOS setup. Core 0 handles real-time 16kHz, 16-bit mono PCM audio streaming via WebSockets. Core 1 listens to MQTT for hardware control commands (lights, fans) and TTS playback.
 
 ### 2. Brain (Processing Pipeline)
+   This will be where the computing happens
 * **Hardware:** Raspberry Pi 3B+
 * **Software Stack:**
   * **Network Ingestion:** Asyncio WebSocket Server.
